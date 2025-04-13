@@ -18,7 +18,9 @@ async function getSoundCloudData(trackUrl) {
 
         const matcht = html.match(/<meta property="og:title" content="([^"]+)"/);
         if (matcht && matcht[1]) {
-            trackInfo.set("title", matcht[1]);
+            const tempDiv = document.createElement("div");
+            tempDiv.innerHTML = matcht[1];
+            trackInfo.set("title", tempDiv.textContent || tempDiv.innerText);
         } else {
             throw new Error("Title not found");
         }
