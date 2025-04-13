@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundCloud DL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <div class="center"><h1>Welcome to SoundCloud Cover</h1></div>
+    <div class="center">
+        <div style="background-color: rgb(6, 6, 6); display:flex;">
+            <img id="cover-image" src="https://placehold.co/250" width="250px" height="250px">
+            <div style="display: flex; flex-direction: column; padding-left: 20px; padding-right: 20px;">
+                <span style="padding-top: 20px; font-size: xx-large; padding-bottom: 5px;"><b id="title">Song Title</b></span>
+                <div style="width: 100%; background-color: white; height: 2px;"></div>
+                <div style="padding-top: 15px;"></div>
+                <input id="url" placeholder="Enter SoundCloud URL" style="width: 500px">
+                <div style="padding-top: 15px;"></div>
+                <div style="display: flex-box;">
+                    <button id="load">Get Cover</button>
+                    <button id="dl">View Raw Cover</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p style="color: gray;" class="center"><i>Made by <a style="color: gray;" href="https://github.com/DatBogie">Dat Bogie</a></i></p>
+</body>
+</html>
